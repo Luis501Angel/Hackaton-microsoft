@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
+import {environment} from '../../../environments/environment';
 
 @Component({
   selector: 'app-curso',
@@ -14,7 +15,16 @@ export class CursoComponent implements OnInit {
   }
 
   irAActividad() {
-  this.router.navigate(['/actividad']);
+    if (environment.tipo_estudiante === 'estudiante kinestesico') {
+      this.router.navigate(['/actividad/kinestesico']);
+    }
+    if (environment.tipo_estudiante === 'estudiante visual') {
+      this.router.navigate(['/actividad/visual']);
+    }
+    if (environment.tipo_estudiante === 'estudiante auditivo') {
+      this.router.navigate(['/actividad/auditivo']);
+    }
+
   }
 
 }

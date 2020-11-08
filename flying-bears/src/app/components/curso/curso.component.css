@@ -16,6 +16,11 @@
   content:'';
 }
 
+.btn-return {
+  padding: 5px;
+  padding-left: 100px;
+}
+
 @media screen and (min-width: 700px) {
   .photo-card {
     flex-direction: row;

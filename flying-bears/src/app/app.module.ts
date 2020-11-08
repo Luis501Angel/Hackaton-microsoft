@@ -8,6 +8,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { CursoComponent } from './components/curso/curso.component';
 import { ActividadComponent } from './components/actividad/actividad.component';
 import { LoginComponent } from './components/login/login.component';
+import { ActividadVisualComponent } from './components/actividad-visual/actividad-visual.component';
+import { ActividadAuditivoComponent } from './components/actividad-auditivo/actividad-auditivo.component';
+import { ActividadKinestesicoComponent } from './components/actividad-kinestesico/actividad-kinestesico.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,12 +20,16 @@ import { LoginComponent } from './components/login/login.component';
     NavbarComponent,
     CursoComponent,
     ActividadComponent,
-    LoginComponent
+    LoginComponent,
+    ActividadVisualComponent,
+    ActividadAuditivoComponent,
+    ActividadKinestesicoComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
