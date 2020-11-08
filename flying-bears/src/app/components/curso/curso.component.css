@@ -9,6 +9,12 @@
   margin-left: auto;
   margin-right: auto;
 }
+.highlight-clean {
+  color: #313437;
+  background-color: #fff;
+  padding: 50px 0;
+  content:'';
+}
 
 @media screen and (min-width: 700px) {
   .photo-card {
